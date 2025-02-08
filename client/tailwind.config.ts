@@ -4,8 +4,8 @@ export default {
     theme: {
         extend: {
             colors: {
-                dark: "#212429",
-                darkHover: "#3D404A",
+                dark: "#212429", //background
+                darkHover: "#97DFFC", //box
                 light: "#f5f5f5",
                 primary: "#39E079",
                 danger: "#ef4444",
