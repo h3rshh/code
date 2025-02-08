@@ -1,3 +1,4 @@
+import AISidebar from "@/components/sidebar/AiSidebar";
 import SplitterComponent from "@/components/SplitterComponent"
 import ConnectionStatusPage from "@/components/connection/ConnectionStatusPage"
 import Sidebar from "@/components/sidebar/Sidebar"
@@ -50,6 +51,7 @@ function EditorPage() {
     return (
         <SplitterComponent>
             <Sidebar />
+            <AISidebar />
             <WorkSpace/>
         </SplitterComponent>
     )
