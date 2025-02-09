@@ -41,6 +41,7 @@ const SocketProvider = ({ children }: { children: ReactNode }) => {
     const socket: Socket = useMemo(
         () =>
             io(BACKEND_URL, {
+                transports: ["websocket", "polling"], 
                 reconnectionAttempts: 2,
             }),
         [],
@@ -55,7 +56,7 @@ const SocketProvider = ({ children }: { children: ReactNode }) => {
         },
         [setStatus],
     )
-
+    
     const handleUsernameExist = useCallback(() => {
         toast.dismiss()
         setStatus(USER_STATUS.INITIAL)

@@ -7,6 +7,7 @@ import { USER_CONNECTION_STATUS, User } from "./types/user"
 import { Server } from "socket.io"
 import path from "path"
 
+
 dotenv.config()
 
 const app = express()

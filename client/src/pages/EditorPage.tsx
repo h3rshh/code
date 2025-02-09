@@ -1,3 +1,4 @@
+import AISidebar from "@/components/sidebar/AiSidebar";
 import SplitterComponent from "@/components/SplitterComponent"
 import ConnectionStatusPage from "@/components/connection/ConnectionStatusPage"
 import Sidebar from "@/components/sidebar/Sidebar"
@@ -10,7 +11,6 @@ import { SocketEvent } from "@/types/socket"
 import { USER_STATUS, User } from "@/types/user"
 import { useEffect } from "react"
 import { useLocation, useNavigate, useParams } from "react-router-dom"
-
 function EditorPage() {
     // Listen user online/offline status
     useUserActivity()
@@ -50,6 +50,7 @@ function EditorPage() {
     return (
         <SplitterComponent>
             <Sidebar />
+            <AISidebar />
             <WorkSpace/>
         </SplitterComponent>
     )
